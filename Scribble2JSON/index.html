@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="Assets/style.css">
+  </head>
+  <body>
+    <div id="app-container">
+      <div id="canvas-container">
+        <canvas id="myCanvas" width="470" height="470"></canvas>
+          <div id="loading-container">
+          <p>Loading Canvas...</p>
+          <div class="loader"></div></div>
+      </div>
+      <div id="buttons-container">
+        <button id="undo-button">Undo (Ctrl+Z)</button>
+        <button id="clear-button">Clear (Doubleclick)</button>
+        <button id="export-button">Export JSON</button>
+        <input type="file" id="import-file" style="display:none;">
+        <button id="import-button">Import JSON</button>
+        <button id="create-image">Create Image</button>
+      </div>
+      <div id="file-name-container">
+        <input type="text" id="file-name-input" placeholder="Enter your nickname">
+        <button id="save-file-name">Save</button>
+      </div>
+      <script src="Assets/scribble2JSON.js"></script>
+    </div>
+  </body>
+</html>
